@@ -913,12 +913,12 @@ ul.portfolio-image li .desc{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 90%;
+  background-size: 80%;
   background-repeat: no-repeat;
   position: relative;
   padding: 0;
   margin: 0;
-  min-height: 650px;
+  min-height: 750px;
   width: 100%;
   height: 100%;
   float: left;
@@ -928,12 +928,12 @@ ul.portfolio-image li .desc{
   width: 100%;
   position: relative;
   display: block;
-  min-height: 700px;
+  min-height: 800px;
 }
 .wrap-about .w-content{
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 35%;
   transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
