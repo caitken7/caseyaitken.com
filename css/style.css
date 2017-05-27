@@ -1207,55 +1207,85 @@ ul.portfolio-image li .desc{
 
 /*----------------------------------------- 8) Component --------------------------------------------------*/
 /*---------------- a. Skills ----------------*/
-.skillst {margin-top: 30px;}
-.skillst .skillbar {
-  width: 100%;
-  height: 10px;
-  background-color: #f6f6f6;
-  position: relative;
-  margin-bottom: 60px;
-  padding: 2px;
-  box-sizing: border-box;
+body {
+  font-family: 'Ubuntu', sans-serif;
+  width:960px;
 }
-.skillst .count-bar {
-  width: 100%;
-  height: 5px;
-  width: 0px;
-  position: relative;
+
+p{
+  color:#525252;
+  font-size:12px;
 }
-.skillst .count-bar {background-color: #818181;}
-.skillst .count-bar span{ font-size: 12px;}
-.skillst .title {
-  position: absolute;
-  line-height: 25px;
-  top: -35px;
-  left: 0;
-  padding-left: 10px;
-  font-size: 12px !important;
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
 }
-.skillst .count-bar .count {
-  position: absolute;
-  line-height: 18px;
-  top: -28px;
-  right: -20px;
-  width: 40px;
-  height: 18px;
-  color: #fff;
-  text-align: center;
-  background-color: #2f2f2f;
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
 }
-.skillst .count-bar .count span {
-  position: relative;
-  display: block;
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
 }
-.skillst .count-bar .count span:after {
-  position: absolute;
-  left: 50%;
-  margin-left: -4px;
-  top: 18px;
-  content: "";
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
 }
-.skillst .count-bar .count { background-color: #818181;}
-.skillst .count-bar .count span:after { border-top: 4px solid #818181;}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
