@@ -276,7 +276,7 @@ hr {
   width: 23%;
   height: 100%;
   position: fixed;
-  background: linear-gradient(#2D5F9E, #6B2C4F, black);
+  background: linear-gradient(#5DBF8A, #2D5F9E, black);
   color: white;
   overflow-y: hidden;
 }
@@ -354,7 +354,7 @@ h3.profile-title {
 }
 
 .responsive-header {
-  background: linear-gradient(#2D5F9E, #6B2C4F, black);
+  background: linear-gradient(#5DBF8A, #2D5F9E, black);
   text-align: center;
 }
 @media screen and (max-width: 992px) {
