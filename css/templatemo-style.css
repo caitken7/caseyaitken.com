@@ -298,7 +298,7 @@ hr {
   -webkit-border-radius: 200px;
   border-radius: 100px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 .profile-image img {
   width: 100%;
