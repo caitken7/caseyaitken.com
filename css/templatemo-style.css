@@ -7,30 +7,128 @@ http://www.templatemo.com/tm-441-volton
 */
 
 @font-face {
-  font-family: 'robotolight';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   src: url("../fonts/Roboto-Light-webfont.eot");
-  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Roboto-Light-webfont.woff") format("woff"),
+    url("../fonts/Roboto-Light-webfont.ttf") format("truetype"),
+    url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'robotoregular';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   src: url("../fonts/Roboto-Regular-webfont.eot");
-  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Roboto-Regular-webfont.woff") format("woff"),
+    url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"),
+    url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'robotobold';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   src: url("../fonts/Roboto-Bold-webfont.eot");
-  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Roboto-Bold-webfont.woff") format("woff"),
+    url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"),
+    url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /*---------------------------------------------------------
  1. Reset
 -------------------------------------------------------- */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,11 +137,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .blue {
-	color: #06C;
+  color: #06c;
 }
 
 .green {
-	color: #090;
+  color: #090;
 }
 
 main {
@@ -66,7 +164,7 @@ q {
 
 blockquote:before,
 blockquote:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -118,11 +216,11 @@ sup {
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 img {
@@ -180,7 +278,9 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #777777;
-  font-family: 'robotoregular';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -197,7 +297,11 @@ a:hover {
   color: #555555;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: #555555;
 }
 
@@ -248,7 +352,9 @@ h1, h2, h3, h4, h5 {
 
 h4.widget-title {
   font-size: 30px;
-  font-family: 'robotobold';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -276,7 +382,7 @@ hr {
   width: 23%;
   height: 100%;
   position: fixed;
-  background: linear-gradient(#5DBF8A, #2D5F9E, black);
+  background: linear-gradient(#5dbf8a, #2d5f9e, black);
   color: white;
   overflow-y: hidden;
 }
@@ -308,7 +414,9 @@ h3.profile-title {
   margin-bottom: 5px;
   color: white;
   font-size: 25px;
-  font-family: 'robotobold';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 }
 
 .main-navigation {
@@ -328,13 +436,13 @@ h3.profile-title {
   font-size: 24px;
 }
 .main-navigation li a:hover {
-  background: #5292AF;
+  background: #5292af;
 }
 .main-navigation li a.active {
-  background: #2D5F9E;
+  background: #2d5f9e;
 }
 .main-navigation li a.active:hover {
-  background: #2D5F9E;
+  background: #2d5f9e;
 }
 
 .social-icons {
@@ -350,11 +458,11 @@ h3.profile-title {
   color: white;
 }
 .social-icons a:hover {
-  color: #5292AF;
+  color: #5292af;
 }
 
 .responsive-header {
-  background: linear-gradient(#5DBF8A, #2D5F9E, black);
+  background: linear-gradient(#5dbf8a, #2d5f9e, black);
   text-align: center;
 }
 @media screen and (max-width: 992px) {
@@ -396,10 +504,10 @@ h3.profile-title {
     padding: 10px;
   }
   .main-navigation a.active {
-    background: #2D5F9E !important;
+    background: #2d5f9e !important;
   }
   .main-navigation a:hover {
-    background: #5292AF !important;
+    background: #5292af !important;
   }
 }
 
@@ -408,7 +516,7 @@ h3.profile-title {
   display: block;
   padding: 20px;
   margin-top: 30px;
-  background: #4B73B6;
+  background: #4b73b6;
   color: white;
   font-size: 18px;
 }
@@ -446,7 +554,9 @@ h3.profile-title {
 }
 .welcome-text h2 {
   font-size: 60px;
-  font-family: 'robotobold';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   color: white;
   margin-bottom: 30px;
 }
@@ -465,7 +575,6 @@ h3.profile-title {
 .about-image img {
   width: 100%;
   display: block;
-	
 }
 
 .signature {
@@ -477,7 +586,6 @@ h3.profile-title {
 .signature img {
   width: 100%;
   display: block;
-	
 }
 
 /*------ projects ------ */
@@ -494,9 +602,10 @@ h3.profile-title {
 
 .project-item {
   width: 100%;
-  margin-bottom: 2px;
+  margin: 0 6px 2px 6px;
   overflow: hidden;
   position: relative;
+  height: 200px;
 }
 .project-item img {
   width: 100%;
@@ -504,7 +613,7 @@ h3.profile-title {
 }
 .project-item:hover .project-hover {
   top: 0;
-  opacity: .75;
+  opacity: 0.75;
   visibility: visible;
 }
 
@@ -547,7 +656,8 @@ h3.profile-title {
 .contact-form {
   margin-top: 40px;
 }
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   outline: 0;
   border: 1px solid #aaaaaa;
@@ -555,12 +665,13 @@ h3.profile-title {
   color: #999999;
   margin-bottom: 30px;
 }
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   outline: 0;
 }
 .contact-form .button {
   width: auto;
-  background: #2D5F9E;
+  background: #2d5f9e;
   color: white;
   text-transform: uppercase;
   border: 0;
