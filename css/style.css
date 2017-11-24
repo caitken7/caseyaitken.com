@@ -382,7 +382,7 @@ hr {
   width: 23%;
   height: 100%;
   position: fixed;
-  background: linear-gradient(#5dbf8a, #2d5f9e, black);
+  background: linear-gradient(#fdbb2d, #b21f1f, #1a2a6c);
   color: white;
   overflow-y: hidden;
 }
@@ -462,7 +462,7 @@ h3.profile-title {
 }
 
 .responsive-header {
-  background: linear-gradient(#5dbf8a, #2d5f9e, black);
+  background: linear-gradient(#fdbb2d, #b21f1f, #1a2a6c);
   text-align: center;
 }
 @media screen and (max-width: 992px) {
@@ -531,7 +531,7 @@ h3.profile-title {
 .banner-bg {
   padding: 260px 80px;
   position: relative;
-  background: url("../img/7.jpg");
+  background: url("../img/bijou.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
