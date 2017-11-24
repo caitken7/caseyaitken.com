@@ -294,7 +294,7 @@ a {
   text-decoration: none !important;
 }
 a:hover {
-  color: #555555;
+  color: #fdbb2d;
 }
 
 h1,
@@ -386,7 +386,7 @@ hr {
   width: 23%;
   height: 100%;
   position: fixed;
-  background: linear-gradient(135deg, #fdbb2d, #b21f1f, #1a2a6c);
+  background: linear-gradient(135deg, rgba(255, 187, 34, .7), rgba(187, 17, 17, .8), #1a2a6c), url('../img/texture.jpg') no-repeat;
   color: white;
   overflow-y: hidden;
 }
@@ -440,13 +440,13 @@ h3.profile-title {
   font-size: 24px;
 }
 .main-navigation li a:hover {
-  background: #5292af;
+  background: rgba(255, 187, 34, .3);
 }
 .main-navigation li a.active {
-  background: #2d5f9e;
+  background: rgba(17, 34, 102, .6);
 }
 .main-navigation li a.active:hover {
-  background: #2d5f9e;
+  background: rgba(17, 34, 102, .6);
 }
 
 .social-icons {
@@ -462,11 +462,11 @@ h3.profile-title {
   color: white;
 }
 .social-icons a:hover {
-  color: #5292af;
+  color: #fdbb2d;
 }
 
 .responsive-header {
-  background: linear-gradient(135deg, #fdbb2d, #b21f1f, #1a2a6c);
+  background: linear-gradient(135deg, rgba(255, 187, 34, .7), rgba(187, 17, 17, .8), #1a2a6c), url('../img/texture.jpg') no-repeat;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
@@ -508,10 +508,10 @@ h3.profile-title {
     padding: 10px;
   }
   .main-navigation a.active {
-    background: #2d5f9e !important;
+    background: rgba(17, 34, 102, .6) !important;
   }
   .main-navigation a:hover {
-    background: #5292af !important;
+    background: rgba(255, 187, 34, .3) !important;
   }
 }
 
@@ -520,7 +520,7 @@ h3.profile-title {
   display: block;
   padding: 20px;
   margin-top: 30px;
-  background: #4b73b6;
+  background: rgba(17, 34, 102, .7);
   color: white;
   font-size: 18px;
 }
