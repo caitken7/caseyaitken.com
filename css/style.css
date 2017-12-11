@@ -701,3 +701,47 @@ h3.profile-title {
 #footer p.copyright-text a:hover {
   color: #6cc0f7;
 }
+
+
+/*---------------------------------------------------------
+Modals
+-------------------------------------------------------- */
+/* .modal-body img {
+  margin: 0 auto;
+  width: 100% !important;
+} */
+
+/* .modal-body {
+  position: relative;
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 15px;
+} */
+
+/* .autoModal.modal .modal-body{
+  max-height: 100%;
+  max-width: 100%;
+} */
+
+/* .modal-dialog{text-align:center;}
+.modal-content{display:inline-block;} */
+
+.modal-body img  {
+  width:auto;
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto\9; /* ie8 */
+}
+
+.modal-body{
+  text-align: center;
+  height: auto;
+}
+
+@media (min-width: 768px){
+.modal-dialog {
+  width: auto;      
+  max-width: 90%;
+
+}
+}

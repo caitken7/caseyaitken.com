@@ -11,18 +11,22 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/normalize.css">
 	<script src="https://use.fontawesome.com/b92681660d.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <div class="responsive-header visible-xs visible-sm">
+		<!-- Responsive Small Top Navbar -->
+        <div class="responsive-header hidden-md-up">
         	<div class="container">
         		<div class="row">
         			<div class="col-md-12">
@@ -56,8 +60,8 @@
         	</div>
         </div>
 
-        <!-- SIDEBAR -->
-        <div class="sidebar-menu hidden-xs hidden-sm text-center">
+        <!-- Responsive Large Sidebar -->
+        <div class="sidebar-menu hidden-sm-down text-center">
         	<div class="top-section">
         		<div class="profile-image">
         			<img src="img/profile.jpg" alt="Casey">
@@ -108,7 +112,7 @@
         						</div>
         						<hr>
         					</div>
-        				</div> <!-- #about -->
+        				</div>
         			</div>
 
         			<!-- PROJECTS -->
@@ -119,8 +123,8 @@
         							<h4 class="widget-title">Projects</h4>
         							<h4>Websites:</h4>
         						</div>
-        					</div>
-        					<!-- Websites -->
+							</div>
+							
         					<div class="row projects-holder">
 
         						<div class="col-md-4 col-sm-6">
@@ -258,8 +262,39 @@
         						</div>
         					</div>
         					<br>
-        					<!-- School Portfolios -->
-        					<h4>Art:</h4>
+        					<!-- ART -->
+							<h4>Art:</h4>
+							
+							<!-- Modal Button -->
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+									Open modal
+								  </button>
+
+							<!-- Bijou Modal -->
+							<div class="autoModal modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+									
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="modal-title">Bijou. 2014. Acrylic on canvas. 12"x12". </h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										
+										<!-- Modal body -->
+										<div class="modal-body">
+											<img src="documents/bijou.jpg" alt="Bijou Painting">
+										</div>
+										
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+
         					<div class="row projects-holder">
 
         						<div class="col-md-4 col-sm-6">
@@ -380,9 +415,47 @@
             </div>
         </div>
 
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <!-- <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/min/plugins.min.js"></script>
-        <script src="js/min/main.min.js"></script>
+		<script src="js/min/main.min.js"></script> -->
+		<script>
+		// Select all links with hashes
+		$('a[href*="#"]')
+		// Remove links that don't actually link to anything
+		.not('[href="#"]')
+		.not('[href="#0"]')
+		.click(function(event) {
+			// On-page links
+			if (
+			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+			&& 
+			location.hostname == this.hostname
+			) {
+			// Figure out element to scroll to
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			// Does a scroll target exist?
+			if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate({
+				scrollTop: target.offset().top
+				}, 1000, function() {
+				// Callback after animation
+				// Must change focus!
+				var $target = $(target);
+				$target.focus();
+				if ($target.is(":focus")) { // Checking if the target was focused
+					return false;
+				} else {
+					$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+					$target.focus(); // Set focus again
+				};
+				});
+			}
+			}
+		});
+		</script>
 
     </body>
     </html>
