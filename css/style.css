@@ -446,7 +446,7 @@ h3.profile-title {
 }
 .social-icons li {
   display: inline-block;
-  margin-right: 2vw;
+  margin: 0 1vw;
 }
 .social-icons a {
   font-size: 18px;
