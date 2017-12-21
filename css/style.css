@@ -387,11 +387,7 @@ hr {
   background: linear-gradient(135deg, rgba(255, 187, 34, .7), rgba(187, 17, 17, .8), #1a2a6c), url('../img/texture.jpg') no-repeat;
   color: white;
   overflow-y: hidden;
-}
-@media screen and (max-width: 1290px) {
-  .sidebar-menu {
-    overflow-y: scroll;
-  }
+  box-shadow: 4px 0 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .top-section {
@@ -450,7 +446,7 @@ h3.profile-title {
 }
 .social-icons li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 2vw;
 }
 .social-icons a {
   font-size: 18px;
@@ -600,10 +596,15 @@ h3.profile-title {
   overflow: hidden;
   position: relative;
   height: 200px;
+  border: 1px solid #c9c9c9;
 }
 .project-item img {
+  height: 100%;
   width: 100%;
   display: block;
+  object-fit: cover;
+  position: absolute;
+  object-position: 50% 0%;
 }
 .project-item:hover .project-hover {
   top: 0;

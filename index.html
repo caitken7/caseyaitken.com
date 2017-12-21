@@ -44,15 +44,15 @@
 							<li><a href="https://www.linkedin.com/in/casey-aitken-5312b832/"><i class="fa fa-linkedin big-icon"></i></a></li>
 							<li><a href="mailto:caseyaitken@gmail.com"><i class="fa fa-envelope big-icon"></i></a></li>
 						</ul>
-					</div> <!-- .social-icons -->
+					</div>
 				</div>
 				<a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
 				<div class="main-navigation responsive-menu">
 					<ul class="navigation">
 						<li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
 						<li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
-						<li><a href="#projects"><i class="fa fa-newspaper-o"></i>My Gallery</a></li>
-						<li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+						<li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+						<li><a href="#contact"><i class="fa fa-link"></i>Contact Me</a></li>
 					</ul>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 
                 <div class="main-navigation">
                     <ul class="navigation">
-                        <li><a href="#top"><i class="fa fa-hand-peace-o"></i>Welcome</a></li>
+                        <li><a href="#top"><i class="fa fa-home"></i>Welcome</a></li>
                         <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
                         <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
                         <li><a href="#contact"><i class="fa fa-link"></i>Contact Me</a></li>
@@ -132,14 +132,50 @@
                             </div>
                             
                             <div class="row projects-holder">
+
+                                <!-- CAF Benchmark =============================================================== -->
+                                <div class="col-md-4 col-sm-6" data-toggle="modal" data-target="#cafModal">
+                                    <div class="project-item">
+                                        <img src="img/caf.gif" alt="">
+                                        <div class="project-hover" style="cursor: pointer;">
+                                            <div class="inside">
+                                                <h5><a>CAF Benchmark</a></h5>
+                                                <p>A learning analytics dashboard for collecting Chicago Architecture Foundation's key data points from various sources.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- CAF Benchmark Modal -->
+                                <div class="autoModal modal fade" id="cafModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                        
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title"><strong>CAF Benchmark</strong>. A learning analytics dashboard for collecting Chicago Architecture Foundation's key data points from various sources.
+                                                    <br><a href="http://www.caseyaitken.com/Data-Dashboard-Demo/">See More</a>
+                                                    <br><a href="https://github.com/caitken7/CAF-Benchmark">View Github</a> </h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <img src="img/caf.gif" class="img-fluid" alt="CAF" style="max-height:80vh;">
+                                                <img src="img/caf.png" class="img-fluid" alt="CAF" style="max-height:80vh;">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
                                  <!-- QLINK =============================================================== -->
-                                 <div class="col-md-4 col-sm-6" data-toggle="modal" data-target="#qlinkModal">
+                                <div class="col-md-4 col-sm-6" data-toggle="modal" data-target="#qlinkModal">
                                     <div class="project-item">
                                         <img src="img/qlink.png" alt="">
                                         <div class="project-hover" style="cursor: pointer;">
                                             <div class="inside">
-                                                <h5><a>Guitar Head</a></h5>
-                                                <p>2011. Acrylic on canvas. 18" x 24".</p>
+                                                <h5><a>QLINK</a></h5>
+                                                <p>A full-stack web app that lets users easily create and exchange virtual business cards. 📇</p>
                                             </div>
                                         </div>
                                     </div>
@@ -153,7 +189,7 @@
                                             <div class="modal-header">
                                                 <h4 class="modal-title"><strong>QLINK</strong>. A full-stack web app that lets users easily create and exchange virtual business cards. 📇
                                                     <br><a href="https://qlinkconnect.herokuapp.com/">Visit QLINK Website</a>
-                                                    <br><a href="https://qlinkconnect.herokuapp.com/">View on Github</a> </h4>
+                                                    <br><a href="https://github.com/caitken7/Qlink">View Github</a> </h4>
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             
@@ -166,17 +202,6 @@
                                     </div>
                                 </div>
                                     
-                                <!-- <div class="col-md-4 col-sm-6">
-                                    <div class="project-item">
-                                        <img src="img/qlink.png" alt="">
-                                        <div class="project-hover" style="cursor: pointer;" onclick="window.location='https://qlinkconnect.herokuapp.com/';">
-                                            <div class="inside">
-                                                <h5><a>QLINK</a></h5>
-                                                <p>A full-stack web app that lets users easily create and exchange virtual business cards. 📇</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
                                 <div class="col-md-4 col-sm-6">
                                     <div class="project-item">
                                         <img src="img/timetofly.png" alt="">
@@ -238,7 +263,8 @@
                             <!-- Graphic Design -->
                             <h4>Graphic Design:</h4>
                             <div class="row projects-holder">
-                                <div class="col-md-4 col-sm-6">
+
+                                <!-- <div class="col-md-4 col-sm-6">
                                     <div class="project-item">
                                         <img src="img/canopyCatalog.png" alt="">
                                         <div class="project-hover" style="cursor: pointer;" onclick="window.location='documents/cdrg_catalog.pdf';">
@@ -257,6 +283,84 @@
                                                 <h5><a>CRD+G Canopy Magazine</a></h5>
                                                 <p>Seasonal magazine for Chicago Roof Deck and Garden's Canopy brand.</p>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                
+                                <!-- CRDG Catalog =============================================================== -->
+                                <div class="col-md-4 col-sm-6" data-toggle="modal" data-target="#catalogModal">
+                                    <div class="project-item">
+                                        <img src="img/canopyCatalog.png" alt="">
+                                        <div class="project-hover" style="cursor: pointer;">
+                                            <div class="inside">
+                                                <h5><a>CRD+G Canopy Catalog</a></h5>
+                                                <p>Catalog of Chicago Roof Deck and Garden's recommended materials and products under the Canopy brand.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- CRDG Catalog Modal -->
+                                <div class="autoModal modal fade" id="catalogModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                        
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title"><strong>CRD+G Canopy Catalog</strong>
+                                                    <br>Catalog of Chicago Roof Deck and Garden's recommended materials and products under their Canopy brand.
+                                                    <br><a href="documents/cdrg_catalog.pdf">Click to view full pdf</a>
+                                                </h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <p>Highlights:</p>
+                                                <img src="documents/cdrg_catalog1.png" class="img-fluid" alt="Catalog" style="max-height:80vh;">
+                                                <img src="documents/cdrg_catalog2.png" class="img-fluid" alt="Catalog" style="max-height:80vh;">
+                                                <img src="documents/cdrg_catalog3.png" class="img-fluid" alt="Catalog" style="max-height:80vh;">
+                                                <img src="documents/cdrg_catalog4.png" class="img-fluid" alt="Catalog" style="max-height:80vh;">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- CRDG Magazine =============================================================== -->
+                                <div class="col-md-4 col-sm-6" data-toggle="modal" data-target="#magazineModal">
+                                    <div class="project-item">
+                                        <img src="img/canopyMagazine.png" alt="">
+                                        <div class="project-hover" style="cursor: pointer;">
+                                            <div class="inside">
+                                                <h5><a>CRD+G Canopy Magazine</a></h5>
+                                                <p>Seasonal magazine for Chicago Roof Deck and Garden's Canopy brand.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- CRDG Magazine Modal -->
+                                <div class="autoModal modal fade" id="magazineModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                        
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title"><strong>CRD+G Canopy Magazine</strong>
+                                                    <br>Seasonal magazine for Chicago Roof Deck and Garden's Canopy brand.
+                                                    <br><a href="documents/cdrg_magazine.pdf">Click to view full pdf</a>
+                                                </h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <p>Highlights:</p>
+                                                <img src="documents/cdrg_magazine1.png" class="img-fluid" alt="Magazine" style="max-height:80vh;">
+                                                <img src="documents/cdrg_magazine2.png" class="img-fluid" alt="Magazine" style="max-height:80vh;">
+                                                <img src="documents/cdrg_magazine3.png" class="img-fluid" alt="Magazine" style="max-height:80vh;">
+                                                <img src="documents/cdrg_magazine4.png" class="img-fluid" alt="Magazine" style="max-height:80vh;">
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
