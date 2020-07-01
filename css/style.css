@@ -384,7 +384,7 @@ hr {
 .sidebar-menu {
   height: 100vh;
   position: fixed;
-  background: linear-gradient(135deg, rgba(255, 187, 34, .7), rgba(187, 17, 17, .8), #1a2a6c), url('../img/texture.jpg') no-repeat;
+  background: linear-gradient(135deg, #1cb5e0bd, #000046bf), url('../img/texture.jpg') no-repeat;
   color: white;
   overflow-y: hidden;
   box-shadow: 4px 0 6px 0 rgba(0, 0, 0, 0.2);
@@ -457,7 +457,7 @@ h3.profile-title {
 }
 
 .responsive-header {
-  background: linear-gradient(135deg, rgba(255, 187, 34, .7), rgba(187, 17, 17, .8), #1a2a6c), url('../img/texture.jpg') no-repeat;
+  background: linear-gradient(135deg, #1cb5e0bd, #000046bf), url('../img/texture.jpg') no-repeat;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
