@@ -607,6 +607,7 @@ h3.profile-title {
   position: relative;
   height: 330px;
   border: 1px solid #c9c9c9;
+  border-radius: 6px;
   box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
 }
 
