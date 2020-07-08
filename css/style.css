@@ -291,10 +291,9 @@ a {
   -ms-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-  text-decoration: none !important;
 }
 a:hover {
-  color: #fdbb2d;
+  text-decoration: underline;
 }
 
 h1,
@@ -391,19 +390,19 @@ hr {
 }
 
 .top-section {
-  padding: 3vh;
 }
 
 .profile-image {
   max-width: 80%;
-  margin: auto;
-  margin-bottom: 3vh;
+  margin: 15px auto;
 }
 .profile-image img {
   width: 100%;
+  max-width: 200px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   border: 2px solid white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 h3.profile-title {
@@ -442,12 +441,19 @@ h3.profile-title {
 
 .social-icons {
   display: block;
-  /* padding: 30px 40px; */
+  padding-top: 15px;
 }
 .social-icons li {
   display: inline-block;
   margin: 0 1vw;
 }
+
+@media (max-width: 992px){
+  .social-icons li:first-of-type {
+    margin-left: 0;
+  }
+}
+
 .social-icons a {
   font-size: 18px;
   color: white;
@@ -462,8 +468,8 @@ h3.profile-title {
 }
 @media screen and (max-width: 992px) {
   .responsive-header .main-navigation {
-    margin-top: 10px;
-    /* display: none; */
+    margin-top: 10px;    
+    padding-bottom: 15px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -474,8 +480,8 @@ h3.profile-title {
 @media screen and (max-width: 992px) {
   .responsive-header .profile-image {
     float: left;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     -webkit-border-radius: 75px;
     border-radius: 75px;
     overflow: hidden;
@@ -521,7 +527,7 @@ h3.profile-title {
 .banner-bg {
   padding: 260px 80px;
   position: relative;
-  background: url("../img/bijou.png");
+  background: url("../img/bijou.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -586,17 +592,18 @@ h3.profile-title {
 }
 .projects-holder .col-md-4,
 .projects-holder .col-md-4 {
-  padding-right: 1px;
-  padding-left: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .project-item {
   width: 100%;
-  margin: 0 6px 2px 6px;
+  margin: 0 6px 40px 6px;
   overflow: hidden;
   position: relative;
-  height: 200px;
+  height: 330px;
   border: 1px solid #c9c9c9;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
 }
 
 .project-item img {
@@ -627,6 +634,7 @@ h3.profile-title {
   -ms-transition: all 200ms linear;
   -o-transition: all 200ms linear;
   transition: all 200ms linear;
+  cursor: pointer;
 }
 .project-hover .inside {
   position: absolute;
@@ -638,9 +646,10 @@ h3.profile-title {
 .project-hover h5 {
   font-size: 16px;
   margin-bottom: 15px;
+  color: white;
 }
 .project-hover h5 a {
-  color: white !important;
+  color: white;
 }
 .project-hover p {
   color: white;
@@ -679,7 +688,7 @@ h3.profile-title {
 
 .huge-icon {
   font-size: 150px;
-
+}
 /*---------------------------------------------------------
  5. Footer
 -------------------------------------------------------- */
@@ -696,44 +705,116 @@ h3.profile-title {
 
 
 /*---------------------------------------------------------
-Modals
+Modal Updates
 -------------------------------------------------------- */
-/* .modal-body img {
-  margin: 0 auto;
-  width: 100% !important;
-} */
+.night-mode .modal-dialog .modal-header {
+  background: #232323;
+  border-bottom: 0;
+}
+.night-mode .modal-content {
+  border: none;
+}
+.night-mode .modal-dialog .modal-header .modal-title {
+  color: #fff;
+  font-weight: 600;
+}
+.night-mode .modal-dialog .modal-header p {
+  color: #fff;
+}
+.night-mode .modal-dialog .modal-header a {
+  color: #fff;
+}
+.night-mode .modal-dialog .modal-header button.close {
+  color: #fff;
+  text-shadow: none;
+  opacity: 1;
+}
 
-/* .modal-body {
+.night-mode .links-list li a:before {
+  border-left-color: #fff;
+}
+
+.modal-dialog {
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
+  max-height: 90vh;
+}
+
+.modal-header {
+  display: block;
   position: relative;
-  overflow-y: auto;
-  max-height: 400px;
-  padding: 15px;
-} */
-
-/* .autoModal.modal .modal-body{
-  max-height: 100%;
-  max-width: 100%;
-} */
-
-/* .modal-dialog{text-align:center;}
-.modal-content{display:inline-block;} */
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.modal-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.modal-dialog p{
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 5px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.modal-header a {
+  display: block;
+  font-size: 1rem;
+}
+.modal-header button.close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  font-size: 2rem;
+}
 
 .modal-body img  {
-  width:auto;
-  max-width: 100%;
-  max-height: 70vh;
-  width: auto\9; /* ie8 */
+  width: auto;
+  object-fit: cover;
 }
 
 .modal-body{
   text-align: center;
   height: auto;
+  padding: 0;
 }
+
+.links-list {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.links-list li {
+  position: relative;
+}
+.links-list li a {
+  padding: 0 20px;
+}
+.links-list li a:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 30%;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #006699;
+  transition: all .2s ease;
+}
+.links-list li a:hover:before {    
+  opacity: 1;
+  transform: translateX(3px);
+  border-left: 8px solid #ff2222;
+}
+
 
 @media (min-width: 768px){
-.modal-dialog {
-  width: auto;      
-  max-width: 90%;
+  .modal-dialog {
+    width: auto;      
+    max-width: 90%;
 
-}
+  }
 }
