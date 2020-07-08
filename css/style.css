@@ -414,6 +414,10 @@ h3.profile-title {
   font-weight: 300;
 }
 
+.sidebar-menu .profile-description {
+  padding-bottom: 20px;
+}
+
 .main-navigation {
 }
 .main-navigation li {
@@ -429,8 +433,11 @@ h3.profile-title {
   margin-right: 15px;
   font-size: 24px;
 }
+.main-navigation li a:hover i {
+  color: #fdbb2d;
+}
 .main-navigation li a:hover {
-  background: rgba(255, 187, 34, .3);
+  color: #fdbb2d;
 }
 .main-navigation li a.active {
   background: rgba(17, 34, 102, .6);
@@ -501,9 +508,6 @@ h3.profile-title {
   }
   .main-navigation a.active {
     background: rgba(17, 34, 102, .6) !important;
-  }
-  .main-navigation a:hover {
-    background: rgba(255, 187, 34, .3) !important;
   }
 }
 
