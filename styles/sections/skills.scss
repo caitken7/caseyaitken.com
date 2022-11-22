@@ -1,0 +1,97 @@
+
+
+// ================================================
+// EXPERIENCE
+// ================================================
+
+.skills {
+  position: relative;
+  padding: 50px 0 100px;
+  background: $color-white;
+
+  @include tablet-up {
+    padding: 50px 0 180px;
+  }
+
+  @include desktop {
+    padding: 30px 0 260px;
+  }
+
+  @include desktop-xl {
+    padding: 30px 0 320px;
+  }
+}
+
+.skills__background-shape,
+.skills__background-shape-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.skills__background-shape {
+  transform: translateY(-100%);
+
+  @media (width > 2000px) {
+    transform: translateY(-135%);
+    scale: 100% 60%;
+  }
+}
+
+.skills__background-shape-2 {
+  transform: translateY(-98%);
+
+  @media (width > 2000px) {
+    transform: translateY(-133%);
+    scale: 100% 60%;
+  }
+}
+
+.skills__container {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.skills__text-wrap {
+  max-width: 550px;
+  margin: 0 auto;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    padding-right: 50px;
+  }
+}
+
+.skills__title {
+  padding-bottom: 30px;
+}
+
+.skills__description {
+  padding-bottom: 20px;
+  max-width: 660px;
+}
+
+#Container {
+  width: 90vw;
+  margin: 0 auto;
+
+  @include desktop {
+    width: 50vw;
+  }
+
+  a {
+    pointer-events: none;
+  }
+
+  img {
+    max-width: 50px;
+  }
+}
+

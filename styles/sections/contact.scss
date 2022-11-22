@@ -1,0 +1,21 @@
+.contact {
+  padding: 30px 0;
+  color: $color-white;
+  text-align: center;
+
+  @include tablet-up {
+    padding: 100px 0;
+  }
+}
+
+.contact__title {
+
+}
+
+.contact__description {
+  padding-bottom: 30px;
+}
+
+.contact__cta {
+  margin: 0 auto;
+}

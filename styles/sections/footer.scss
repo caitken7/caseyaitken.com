@@ -1,0 +1,80 @@
+// ================================================
+// Footer
+// ================================================
+
+.footer {
+  padding: 100px 0 0;
+  background: $color-navy;
+}
+
+.waves__container {
+  position:relative;
+  text-align:center;
+  // background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  background: $color-navy;
+  color:white;
+}
+
+.waves__svg {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.waves__content {
+  position:relative;
+  padding: 30px 10px;
+  text-align:center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves__text {
+  color: $color-navy;
+  text-align: center;
+  font-family: "Sono-Regular";
+}
+
+/* Animation */
+
+.waves__parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.waves__parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.waves__parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.waves__parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.waves__parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves__svg {
+    height: 40px;
+    min-height: 40px;
+  }
+}

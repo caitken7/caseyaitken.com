@@ -1,0 +1,41 @@
+// ================================================
+// Base Styles
+// ================================================
+
+html {
+  background: $color-navy;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary-semibold;
+  margin: 0;
+}
+
+h2 {
+  font-size: rem(40);
+
+  @include desktop {
+    font-size: rem(50);
+  }
+}
+
+p {
+  margin: 0;
+  line-height: 2.2;
+  font-family: $font-primary;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 $gutter-width;
+  max-width: $container-width;
+}

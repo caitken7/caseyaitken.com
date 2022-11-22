@@ -1,0 +1,43 @@
+// ================================================
+// Words
+// ================================================
+
+.words__section {
+  padding: 50px 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #0099ff;
+  overflow: hidden;
+  font-family: "Poppins-SemiBold";
+}
+
+.words {
+  color: #0099ff;
+  font-size: 0;
+  line-height: 1;
+  span {
+    font-size: 120px;
+    display: inline-block;
+    animation: move 2s ease-in-out infinite;
+    &:nth-child(2) { animation-delay: 0.4s; }
+    &:nth-child(3) { animation-delay: 0.8s; }
+    &:nth-child(4) { animation-delay: 1.2s; }
+    &:nth-child(5) { animation-delay: 1.6s; }
+    &:nth-child(6) { animation-delay: 2.0s; }
+    &:nth-child(7) { animation-delay: 2.4s; }
+    &:nth-child(8) { animation-delay: 2.8s; }
+    &:nth-child(9) { animation-delay: 3.2s; }
+  }
+}
+
+@keyframes move {
+  0% { transform: translate(-25%, 0);}
+  50% { text-shadow: 0 15px 40px rgba(black, 0.6); }
+  100% { transform: translate(33%, 0); }
+}
+

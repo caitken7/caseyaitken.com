@@ -1,0 +1,230 @@
+
+// ================================================
+// Projects
+// ================================================
+
+.projects {
+  position: relative;
+  z-index: 1;
+  padding: 60px 0 0;
+
+  @include desktop {
+    padding: 20px 0 0;
+  }
+
+  &:before {
+    content: "";
+    background: $color-navy;
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: -1;
+  }
+}
+
+.projects__background-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-70%);
+
+  &.projects__background-shape--behind {
+    z-index: -2;
+  }
+
+  @media (width > 2000px) {
+    transform: translateY(-91%);
+    scale: 100% 60%;
+  }
+}
+
+.projects__container {
+  position: relative;
+}
+
+.projects__title { 
+  padding: 0 0 20px;
+  color: $color-white;
+  text-align: center;
+}
+
+.projects__description {
+  color: $color-light-grey-1;
+  text-align: center;
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 50vh;
+  --card-width: calc(var(--card-height) / 0.5);
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.projects__card-container {
+  margin: 0 auto;
+  padding: 0 0 100px;
+  max-width: 1500px;
+}
+
+.projects__card-grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 0;
+  box-sizing: border-box;
+
+  @include desktop {
+    gap: 60px 50px;
+  }
+}
+
+.projects__card {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  max-width: 90%;
+  max-height: 48vw;
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+
+  @include desktop {
+    max-width: 46%;
+    max-height: calc(100vw / 4);
+  }
+
+  @include desktop-xl {
+    max-height: 350px;
+  }
+
+}
+
+.projects__card::before,
+.projects__card::after {
+  pointer-events: none;
+  // display: none;
+}
+
+.projects__card::before {
+  content: "";
+  width: 101%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 2.5s linear infinite;
+}
+
+.projects__card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+  opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+.projects__card-text-wrap {
+  max-width: calc(100% - 20px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background: rgba(23, 27, 44, 0.8);
+    transition: opacity 0.2s ease;
+  }
+}
+
+.projects__card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.projects__card-title {
+
+}
+
+.projects__card-cta {
+  text-decoration: underline;
+}
+
+.projects__card p {
+  padding-bottom: 10px;
+  font-size: rem(18);
+  line-height: 1.2;
+}
+
+.projects__show-more-button {
+  margin: 0 auto;
+}
+
+
+.projects__card:hover {
+  color: $color-white;
+  cursor: pointer;
+
+  img {
+    opacity: 0.1;
+    cursor: pointer;
+  }
+
+  &::before,
+  &::after {
+    // background-image: linear-gradient(var(--rotate), #bebebe, #676767 43%, #363636);
+    background-image: linear-gradient(var(--rotate), #ececec, #b6b6b6 43%, #7d7d7d);
+    cursor: pointer;
+  }
+
+  .projects__card-text-wrap::before {
+    opacity: 1;
+  }
+}

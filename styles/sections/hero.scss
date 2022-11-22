@@ -1,0 +1,125 @@
+// ================================================
+// Hero
+// ================================================
+
+.hero {
+  padding-top: 70px;
+  background-image: linear-gradient(180deg, $color-green 0%, $color-blue 100%);
+}
+
+.hero__container {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hero__text-wrap {
+  color: $color-white;
+
+  @include desktop {
+    padding: 80px 0 230px;
+    justify-content: left;
+  }
+}
+
+.hero__pre-title,
+.hero__title,
+.hero__post-title,
+.hero__sub-title {
+  @include tablet-down {
+    text-align: center;
+  }
+}
+
+.hero__pre-title {
+  margin-bottom: 12px;
+  font-family: $font-secondary;
+  font-size: rem(18);
+
+  &.fade-in-section {
+    transition: opacity 0.8s ease, transform 1.2s ease;
+  }
+
+  @include desktop {
+    margin-bottom: 20px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 15px;
+  font-size: rem(60);
+  line-height: 1;
+
+  @media (width > 340px) {
+    font-size: rem(80);
+  }
+
+  &.fade-in-section {
+    transition: opacity 1.0s ease, transform 1.4s ease;
+  }
+
+  @include desktop {
+    margin-bottom: 22px;
+  }
+}
+
+.hero__post-title {
+  padding-bottom: 15px;
+  color: $color-light-grey-1;
+  font-family: $font-primary-semibold;
+  font-size: rem(50);
+  line-height: 1.1;
+
+  &.fade-in-section {
+    transition: opacity 1.2s ease, transform 1.6s ease;
+  }
+
+  @include desktop {
+    padding-bottom: 35px;
+    font-size: rem(60);
+  }
+}
+
+.hero__sub-title {
+  max-width: 560px;
+  line-height: 1.8;
+
+  &.fade-in-section {
+    transition: opacity 1.4s ease, transform 1.8s ease;
+  }
+
+  @include tablet-down {
+    margin: 0 auto;
+  }
+}
+
+.hero__cta {
+  margin: 30px auto 20px;
+
+  @include desktop {
+    margin: 30px 0 20px;
+  }
+
+  &.fade-in-section {
+    transition: opacity 1.6s ease-out, transform 2.0s ease-out, background 300ms ease-in-out, color 0.5s ease;
+  }
+}
+
+.hero__profile-image-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 20px;
+
+  @include desktop {
+    margin-left: 20px;
+    padding-top: 0;
+  }
+}
+
+.hero__profile-image {
+  margin: 0 auto;
+  width: 400px;
+  max-width: 100%;
+}

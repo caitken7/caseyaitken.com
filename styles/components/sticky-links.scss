@@ -1,0 +1,74 @@
+.sticky-links {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  top: 20px;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 2;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 1.8s ease, transform 2.2s ease, background 0.4s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  @include desktop-xl {
+    left: 20px;
+    left: 20px;
+    translate: unset;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+
+    &.fade-in-section {
+      transition: opacity 1.8s ease, transform 2.2s ease, background 0.4s ease;
+    }
+  }
+
+  @media (width > 1550px) {
+    left: calc(46% - ($container-width / 2) - 65px);
+  }
+
+  &.fade-in-section {
+    transition: opacity 0.6s ease, transform 1.0s ease, background 0.4s ease;
+  }
+}
+
+.sticky-links__link {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: #385f76;
+    transition: all 0.5s ease-out;
+
+    @include desktop {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &:hover {
+    svg {
+      rotate: 360deg;
+      fill: $color-slate-blue;
+    }
+  }
+}
+
+
+
+.sticky-links {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  // background: no-repeat 0 0 fixed;
+}

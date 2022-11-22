@@ -1,0 +1,26 @@
+{
+  "name": "caseyaitken.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitken7/caseyaitken.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caitken7/caseyaitken.com/issues"
+  },
+  "homepage": "https://github.com/caitken7/caseyaitken.com#readme",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
