@@ -21,7 +21,8 @@ h6 {
 }
 
 h2 {
-  font-size: rem(40);
+  font-size: rem(35);
+  line-height: 1.2;
 
   @include desktop {
     font-size: rem(50);

@@ -44,13 +44,15 @@
 }
 
 .projects__title { 
-  padding: 0 0 20px;
+  padding: 0 5px 20px;
   color: $color-white;
   text-align: center;
 }
 
 .projects__description {
+  padding: 0 10px 20px;
   color: $color-light-grey-1;
+  line-height: 1.4;
   text-align: center;
 }
 
@@ -86,11 +88,12 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
-  padding: 80px 0;
+  padding: 25px 0 80px;
   box-sizing: border-box;
 
   @include desktop {
     gap: 60px 50px;
+    padding: 80px 0;
   }
 }
 
