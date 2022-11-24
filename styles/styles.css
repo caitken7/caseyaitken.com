@@ -1035,6 +1035,7 @@ body.modal-active {
 
 .about__container {
   position: relative;
+  z-index: 1;
 }
 @media (min-width: 1024px) {
   .about__container {
